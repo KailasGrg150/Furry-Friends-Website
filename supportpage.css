@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #97aac1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #eeeeee;
+  border-bottom: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #97aac1; /* ORIGINAL KEPT */
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.support-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.support-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-box {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.text-box h4 {
+  font-size: 36px;
+}
+
+.text-box h1 {
+  font-size: 24px;
+}
+
+.text-box p {
+  font-size: 26px;
+  line-height: 1.6;
+}
+
+
+.image-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.corporate-section {
+  padding: 60px 20px;
+}
+
+.corporate-text {
+  max-width: 800px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: teal; /* ORIGINAL KEPT */
+  color: #000;
+  text-decoration: none;
+  border-radius: none;
+  border: 2px solid #1f3a5f;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e6d43c;
+}
+
+
+footer {
+  padding: 20px;
+}
+
+footer .social {
+  float: right;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 5px;
+  background: teal; /* ORIGINAL KEPT */
+  color: white;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .support-section {
+    flex-direction: column;
+  }
+
+  .text-box h4 {
+    font-size: 28px;
+  }
+
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .text-box p {
+    font-size: 20px;
+  }
+}
